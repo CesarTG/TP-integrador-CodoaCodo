@@ -1,13 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./imagenes/codoacodo.ico">
+    <title>Conf Bs As</title>
 </head>
+
 <body>
-    <h1>En esta pagina vamos a comprar los tickets, que malandreo</h1>
-    
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <!--logo-->
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">
+                    <img src="./imagenes/codoacodo.png" alt="Logo" width="50" height="35"
+                        class="d-inline-block align-text-top">
+                    Conf Bs As
+                </a>
+            </div>
+            <div class="container-fluid conferencia">
+                <a class="navbar-brand active text-light" href="#">La conferencia</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navtexto">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Los creadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Conviertete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="ticket" class="nav-link text-success" href="#">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <a href="./index.html">Volver ↩</a>
+
+    <main class="container">
+
+        <div class="d-flex justify-content-center">
+
+            <div class="card border-primary" style="width: 18rem;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Estudiante</h5>
+                    <p class="card-text">Tienen un descuento</p>
+                    <h5 class="card-title">80%</h5>
+                    <p>*presentar documentacion</p>
+                </div>
+            </div>
+
+            <div class="card border-success mx-2" style="width: 18rem;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Trainee</h5>
+                    <p class="card-text">Tienen un descuento</p>
+                    <h5 class="card-title">50%</h5>
+                    <p>*presentar documentacion</p>
+                </div>
+            </div>
+
+            <div class="card border-warning" style="width: 18rem;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Junior</h5>
+                    <p class="card-text">Tienen un descuento</p>
+                    <h5 class="card-title">15%</h5>
+                    <p>*presentar documentacion</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h3 class="h31">VENTA</h3>
+        <h3 class="h32">VALOR DE TICKETS 200$</h3>
+
+        <form class="form">
+            <div class="btnk">
+                <input type="text" class="form-control btk1" placeholder="Nombre" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div class="btnk">
+                <input type="text" class="form-control btk1" placeholder="Apellido" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="btnk">
+                <input type="text" class="form-control btk1" id="cantidad" placeholder="Cantidad" aria-label="Username"
+                    aria-describedby="basic-addon1" value="2">
+            </div>
+            <div class="btnk">
+                <div class="dropdown btnk">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categoria
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" id="estudiante" href="#">Estudiante</a></li>
+                      <li><a class="dropdown-item" id="trainee" href="#">Trainee</a></li>
+                      <li><a class="dropdown-item" id="junior" href="#">Junior</a></li>
+                    </ul>
+                  </div>
+            </div>
+
+            <h3>Total a pagar</h3>
+            <h4 id="total"></h4>
+
+            <input class="btn btk2" type="submit" value="Borrar">
+            <input class="btn btk2" type="submit" value="Resumen">
+        </form>
+    </main>
+
+    <footer>
+        <div class="divfoo">
+            <h3 class="f3">Preguntas frecuentes</h3>
+            <h3 class="f3">Contáctanos</h3>
+            <h3 class="f3">Prensa</h3>
+            <h3 class="f3">Conferencias</h3>
+            <h3 class="f3">Términos y condiciones</h3>
+            <h3 class="f3">Privacidad</h3>
+            <h3 class="f3">Estudiantes</h3>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="./tickets.js"></script>
 </body>
+
 </html>

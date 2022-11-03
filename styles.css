@@ -134,3 +134,9 @@
 .imgcarru {
     filter: brightness(0.5);
 }
+
+#total {
+    width: 10rem;
+    height: 10rem;
+    background-color: aqua;
+}
