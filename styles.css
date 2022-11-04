@@ -136,7 +136,15 @@
 }
 
 #total {
-    width: 10rem;
-    height: 10rem;
-    background-color: aqua;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    width: auto;
+    height: 5rem;
+    background-color: rgb(0, 132, 255);
+}
+
+#reset {
+    margin-bottom: 1rem;
 }

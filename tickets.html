@@ -89,7 +89,7 @@
         <h3 class="h31">VENTA</h3>
         <h3 class="h32">VALOR DE TICKETS 200$</h3>
 
-        <form class="form">
+        <form class="form" id="form1">
             <div class="btnk">
                 <input type="text" class="form-control btk1" placeholder="Nombre" aria-label="Username"
                     aria-describedby="basic-addon1">
@@ -105,7 +105,7 @@
             </div>
             <div class="btnk">
                 <input type="text" class="form-control btk1" id="cantidad" placeholder="Cantidad" aria-label="Username"
-                    aria-describedby="basic-addon1" value="2">
+                    aria-describedby="basic-addon1" >
             </div>
             <div class="btnk">
                 <div class="dropdown btnk">
@@ -122,9 +122,10 @@
 
             <h3>Total a pagar</h3>
             <h4 id="total"></h4>
+                   
+            <button class="btn btk2" type="reset" id="reset">Resetear</button>
+            <input class="btn btk2" type="submit" value="Resumen" id="resumen">  
 
-            <input class="btn btk2" type="submit" value="Borrar">
-            <input class="btn btk2" type="submit" value="Resumen">
         </form>
     </main>
 
